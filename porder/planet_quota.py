@@ -18,6 +18,7 @@ __copyright__ = """
 """
 __license__ = "Apache 2.0"
 
+#! /usr/bin/env python
 import os
 import json
 import requests
