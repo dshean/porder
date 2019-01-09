@@ -77,7 +77,7 @@ def download(url,local,errorlog):
                 result=SESSION.get(redirect_url)
                 if not os.path.exists(local_path) and result.status_code==200:
                     print("Downloading: " + str(local_path))
-                    f = open(local_path, 'w')
+                    f = open(local_path, 'wb')
                     for chunk in result.iter_content(chunk_size=512 * 1024):
                         if chunk:
                             f.write(chunk)
