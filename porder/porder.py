@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 __copyright__ = """
 
     Copyright 2019 Samapriya Roy
@@ -27,10 +29,6 @@ from .order_now import order
 from .downloader import download
 from .diffcheck import checker
 from .async_downloader import asyncdownload
-os.chdir(os.path.dirname(os.path.realpath(__file__)))
-lpath=os.path.dirname(os.path.realpath(__file__))
-sys.path.append(lpath)
-
 
 #Get quota for your account
 def planet_quota():
